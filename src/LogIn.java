@@ -10,6 +10,7 @@ import javax.swing.JButton;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JPasswordField;
+import java.awt.Color;
 
 
 public class LogIn extends JPanel {
@@ -20,6 +21,7 @@ public class LogIn extends JPanel {
 	 * Create the panel.
 	 */
 	public LogIn() {
+		setBackground(new Color(175, 238, 238));
 		setLayout(new FormLayout(new ColumnSpec[] {
 				FormFactory.RELATED_GAP_COLSPEC,
 				ColumnSpec.decode("default:grow"),

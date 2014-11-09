@@ -5,6 +5,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import java.awt.FlowLayout;
+import java.awt.Color;
 
 
 public class TwitFish extends JFrame {
@@ -36,13 +37,14 @@ public class TwitFish extends JFrame {
 	 */
 	public TwitFish() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		JPanel panel = new LogIn();
+		JPanel panel = new MainScreen();
 		
-		setBounds(100, 100, 250, 175);
+		setBounds(100, 100, 338, 175);
 		contentPane = new JPanel();
+		contentPane.setBackground(new Color(175, 238, 238));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
-		contentPane.setLayout(new FlowLayout(FlowLayout.LEFT, 5, 5));
+		contentPane.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 		
 		
 		contentPane.add(panel);
